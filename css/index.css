@@ -64,6 +64,7 @@ header nav a{
     background-image: url(https://images.unsplash.com/photo-1578985893575-4e38b656f31c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1778&q=80);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     text-align: center;
 }
 .header--title-container{
@@ -93,15 +94,15 @@ header nav a{
 .header--title-container .header--button{
     position: absolute;
     left: calc(50% - 115px);
-    top: 270px;
+    top: 250px;
     display: block;
-    padding: 15px;
+    padding: 10px;
     width: 229px;
-    height: 48px;
+    height: 40px;
     background-color: var(--rojo-zaragoza);
     box-shadow: 0px 4px 8px rgba(10, 10, 10, 1.6);
     border: none;
-    border-radius: 5px;
+    border-radius: 50px;
     font-size: 1.8rem;
     font-weight: bold;
     text-decoration: none;
@@ -116,3 +117,82 @@ header nav a{
     background-repeat: no-repeat;
     background-size: cover;
 } */
+
+main{
+    width: 100%;
+    height: auto;
+}
+.main-products--all{
+    width: 100%;
+    height: auto;
+    padding-top: 120px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.main-products--all .imgZaragoza{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background-image: url(https://img.directindustry.es/images_di/photo-g/15404-11434601.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main-container--title{
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.main-container--title h2{
+    margin-bottom: 2px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6;
+    color: var(--azul-sub);
+}
+.main-container--title p{
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6;
+    color: var(--gris-texto);
+}
+/* grid products */
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(10px, auto);
+    margin-bottom: 20px;
+}
+.products {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .products img{
+    margin-left: 30px;
+    width: 60px;
+  }
+  .des-products{
+    border: 1px solid red;
+    grid-column: 2;
+    grid-row: 1;
+    text-align: left;
+    width: 200px;
+  }
+  .des-products h3{
+    font-size: 2.2rem;
+    color: var(--gris-suave);
+    font-weight: 400;
+   }
+   .des-products h4{
+    font-size: 1.4rem;
+    color: var(--gris-texto);
+    font-weight: 400;
+   }
+   .des-products p{
+    font-size: 1.1rem;
+    color: var(--gris-texto);
+    font-weight: 400;
+   }
