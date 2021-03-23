@@ -108,16 +108,6 @@ header nav a{
     text-decoration: none;
     color: var(--gris-suave);
 }
-/* .header--button span{
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin-left: 10px;
-    background-image:url(../assets/icons/arrow-down-sign-to-navigate.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
-
 main{
     width: 100%;
     height: auto;
@@ -227,4 +217,31 @@ main{
     font-weight: bold;
     text-decoration: none;
     color: var(--gris-suave);
+    margin-bottom: 50px;
    }
+
+    .main-product-detail{
+        position: relative;
+        width: 100%;
+        min-width: 320px;
+        height: auto;
+        padding: 20px 10px;
+        /* background-color: rgba(50, 156, 215, .5); */
+        background-color: rgba(50, 156, 215);
+    }
+    .product-detail--zaragoza-logo{
+        position: absolute;
+        width: 130px;
+        height: 40px;
+        top: -25px;
+        left: calc(50% - 60px);
+        background-image: url(../assets/imgs/logoVertical.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .product-detail--title{
+        width: 90%;
+        min-width: 288px;
+        height: auto;
+        margin: 0 auto;
+    }
